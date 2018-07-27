@@ -1,0 +1,83 @@
+:root{
+  	font-size: 20px; /*change that size to change the size of everything*/
+  	font-family: 'Source Sans Pro';
+}
+body{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	height: 600px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f7+0,dee5ea+78,a7b5bf+100 */
+background: #f2f5f7; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #f2f5f7 0%, #dee5ea 78%, #a7b5bf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #f2f5f7 0%,#dee5ea 78%,#a7b5bf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #f2f5f7 0%,#dee5ea 78%,#a7b5bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f7', endColorstr='#a7b5bf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a.card{
+	display: block;
+	width: 10em;
+	height: 10em;
+	box-shadow: 0 3px 10px 2px rgba(0,0,0,.2);
+	position: relative;
+	border-radius: 6px;
+	color: #fff;
+	text-decoration: none;
+	transition: all .4s ease-in-out;
+}
+div.card-logo{
+	background: #fff;
+	height: 7.2em;
+	border-radius: 3px 3px 0 0;
+	text-align: center;
+}
+div.card-logo img{
+	width: 3em;
+	margin-top: 2em;
+}
+div.card-logo::before{
+	content: '';
+	border-radius: 3px 3px 0 0;
+	position: absolute;
+	left: 0;
+	bottom: 2.8em;
+	width: 10em;
+	height: 0em;
+	background: #EA4C89;
+	transition: all .4s ease-in-out;
+}
+div.card-logo::after{
+	content: 'Leo';
+	position: absolute;
+	left: 0;
+	font-size: 1.5em;
+	width: 6.91em;
+	height: 4.8em;
+	line-height: 4.8em;
+	opacity: 0;
+	transition: all .2s ease-out;
+}
+div.card-text{
+	width: 100%;
+	height: 2.8em;
+	border-radius: 0 0 3px 3px;
+	background: #EA4C89;
+	text-align: center;
+	float: left;
+	line-height: .8em;
+	box-shadow: inset 0 .3em .5em 0em rgba(0,0,0,.2);
+	transition: all .4s ease-out;
+}
+a.card:hover div.card-logo::before{
+	height: 7.2em;
+}
+a.card:hover div.card-logo::after{
+	opacity: 1;
+	transition: all .6s ease-in;
+}
+a.card:hover div.card-text{
+	box-shadow: none;
+	transition: all .1s ease-in;
+}
