@@ -1,21 +1,7 @@
 :root{
-  	font-size: 20px; /*change that size to change the size of everything*/
+  	font-size: 10px; /*change that size to change the size of the card and it's elements*/
   	font-family: 'Source Sans Pro';
 }
-body{
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	height: 600px;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f7+0,dee5ea+78,a7b5bf+100 */
-background: #f2f5f7; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #f2f5f7 0%, #dee5ea 78%, #a7b5bf 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #f2f5f7 0%,#dee5ea 78%,#a7b5bf 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #f2f5f7 0%,#dee5ea 78%,#a7b5bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f7', endColorstr='#a7b5bf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-}
-
 a.card{
 	display: block;
 	width: 10em;
@@ -49,7 +35,7 @@ div.card-logo::before{
 	transition: all .4s ease-in-out;
 }
 div.card-logo::after{
-	content: 'Leo';
+	content: 'Leo'; /*change your after text here*/
 	position: absolute;
 	left: 0;
 	font-size: 1.5em;
@@ -70,6 +56,7 @@ div.card-text{
 	box-shadow: inset 0 .3em .5em 0em rgba(0,0,0,.2);
 	transition: all .4s ease-out;
 }
+/*Where the magic happens !*/
 a.card:hover div.card-logo::before{
 	height: 7.2em;
 }
